@@ -1,0 +1,12 @@
+[Unit]
+Description=krunner
+Wants=xorg.target
+Requires=dbus.socket
+
+[Service]
+Type=forking
+ExecStart=/usr/bin/krunner
+ExecStop=/usr/bin/kquitapp krunner
+
+[Install]
+WantedBy=default.target
