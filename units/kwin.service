@@ -1,6 +1,6 @@
 [Unit]
 Description=kwin
-Wants=xorg.target
+After=xorg.target
 Requires=dbus.socket
 
 [Service]

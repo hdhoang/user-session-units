@@ -1,5 +1,6 @@
 [Unit]
 Description=PulseAudio
+Requires=dbus.socket
 
 [Service]
 ExecStart=/usr/bin/pulseaudio

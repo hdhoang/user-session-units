@@ -1,6 +1,6 @@
 [Unit]
 Description=plasma
-Wants=xorg.target
+After=xorg.target
 Requires=dbus.socket
 
 [Service]

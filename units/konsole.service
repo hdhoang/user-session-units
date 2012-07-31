@@ -1,7 +1,6 @@
 [Unit]
 Description=Konsole
-Wants=xorg.target
-After=gpg-agent.service
+After=xorg.target gpg-agent.service
 
 [Service]
 Type=forking

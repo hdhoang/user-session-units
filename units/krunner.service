@@ -1,7 +1,6 @@
 [Unit]
 Description=krunner
-Wants=xorg.target
-Requires=dbus.socket
+After=xorg.target
 
 [Service]
 Type=forking

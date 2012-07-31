@@ -1,5 +1,6 @@
 [Unit]
 Description=Emacs
+After=xorg.target
 
 [Service]
 EnvironmentFile=%h/.gpg-agent-info
