@@ -1,0 +1,9 @@
+[Unit]
+Description=Firefox
+After=xorg.target
+
+[Service]
+ExecStart=/usr/bin/firefox
+
+[Install]
+WantedBy=default.target
