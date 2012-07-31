@@ -1,0 +1,10 @@
+[Unit]
+Description=Pidgin
+After=xorg.target
+
+[Service]
+ExecStart=/usr/bin/pidgin
+ExecStop=/usr/bin/purple-remote quit
+
+[Install]
+WantedBy=default.target
