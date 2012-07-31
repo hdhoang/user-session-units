@@ -1,0 +1,11 @@
+[Unit]
+Description=kwin
+Wants=xorg.target
+Requires=dbus.socket
+
+[Service]
+ExecStart=/usr/bin/kwin
+ExecStop=/usr/bin/kquitapp kwin
+
+[Install]
+WantedBy=default.target
