@@ -1,0 +1,9 @@
+[Unit]
+Description=Emacs
+
+[Service]
+EnvironmentFile=%h/.gpg-agent-info
+ExecStart=/usr/bin/emacs
+
+[Install]
+WantedBy=default.target
