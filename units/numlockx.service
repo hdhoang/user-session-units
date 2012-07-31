@@ -1,0 +1,10 @@
+[Unit]
+Description=Turn on NumLock
+After=xorg.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/numlockx on
+
+[Install]
+WantedBy=default.target
