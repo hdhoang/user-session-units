@@ -1,0 +1,13 @@
+[Unit]
+Description=Konsole
+Wants=xorg.target
+After=gpg-agent.service
+
+[Service]
+Type=forking
+EnvironmentFile=%h/.gpg-agent-info
+ExecStart=/usr/bin/konsole
+ExecStop=/usr/bin/kquitapp konsole
+
+[Install]
+WantedBy=default.target
