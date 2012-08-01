@@ -1,6 +1,6 @@
 [Unit]
 Description=krunner
-After=xorg.target
+After=kwin.service
 
 [Service]
 Type=forking

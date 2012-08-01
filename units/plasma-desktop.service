@@ -1,6 +1,6 @@
 [Unit]
 Description=plasma
-After=xorg.target
+After=kwin.service
 Requires=dbus.socket
 
 [Service]
