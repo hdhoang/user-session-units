@@ -5,6 +5,7 @@ After=xorg.target
 
 [Service]
 Type=oneshot
+ExecStartPre=/usr/bin/setxkbmap
 ExecStart=/usr/bin/xmodmap %h/.Xmodmap
 
 [Install]
