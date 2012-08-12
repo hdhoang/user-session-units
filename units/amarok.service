@@ -1,0 +1,12 @@
+[Unit]
+Description=Amarok
+After=xorg.target pulseaudio.service
+Requires=dbus.socket
+
+[Service]
+Type=forking
+ExecStart=/usr/bin/amarok
+ExecStop=/usr/bin/kquitapp amarok
+
+[Install]
+WantedBy=default.target
