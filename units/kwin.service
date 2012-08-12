@@ -1,9 +1,9 @@
 [Unit]
 Description=kwin
 After=xorg.target
-Requires=dbus.socket
 
 [Service]
+BusName=org.kde.kwin
 ExecStart=/usr/bin/kwin
 ExecStop=/usr/bin/kquitapp kwin
 
