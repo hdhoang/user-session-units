@@ -1,0 +1,12 @@
+[Unit]
+Description=KMix
+After=kwin.service pulseaudio.service
+Requires=dbus.socket
+
+[Service]
+Type=forking
+ExecStart=/usr/bin/kmix
+ExecStop=/usr/bin/kquitapp kmix
+
+[Install]
+WantedBy=default.target
