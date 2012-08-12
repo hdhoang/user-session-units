@@ -1,0 +1,9 @@
+[Unit]
+Description=GConf
+
+[Service]
+BusName=org.gnome.GConf
+ExecStart=/usr/lib/GConf/gconfd-2
+
+[Install]
+WantedBy=default.target
