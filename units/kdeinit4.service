@@ -1,0 +1,11 @@
+[Unit]
+Description=kdeinit4
+After=xorg.target
+
+[Service]
+Type=forking
+ExecStart=/usr/bin/kdeinit4
+ExecStop=/usr/bin/kdeinit4_shutdown
+
+[Install]
+WantedBy=default.target

@@ -1,6 +1,6 @@
 [Unit]
 Description=kwin
-After=xorg.target
+After=kdeinit4.service
 
 [Service]
 BusName=org.kde.kwin
