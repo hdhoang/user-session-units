@@ -1,0 +1,11 @@
+[Unit]
+Description=kglobalaccel
+After=kdeinit4.service
+
+[Service]
+BusName=org.kde.kglobalaccel
+ExecStart=/usr/bin/kglobalaccel --nofork
+ExecStop=-/usr/bin/kquitapp kglobalaccel
+
+[Install]
+WantedBy=default.target
