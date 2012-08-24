@@ -1,0 +1,11 @@
+[Unit]
+Description=kwalletd
+After=kdeinit4.service
+
+[Service]
+BusName=org.kde.kwalletd
+ExecStart=/usr/bin/kwalletd --nofork
+ExecStop=-/usr/bin/kquitapp kwalletd
+
+[Install]
+WantedBy=default.target
