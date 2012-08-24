@@ -1,8 +1,8 @@
 [Unit]
 Description=PulseAudio
-Requires=dbus.socket
 
 [Service]
+BusName=org.pulseaudio.Server
 ExecStart=/usr/bin/pulseaudio
 ExecStop=/usr/bin/pulseaudio -k
 
