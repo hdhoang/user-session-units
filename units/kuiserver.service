@@ -1,0 +1,11 @@
+[Unit]
+Description=kuiserver
+After=kdeinit4.service
+
+[Service]
+BusName=org.kde.kuiserver
+ExecStart=/usr/bin/kuiserver --nofork
+ExecStop=-/usr/bin/kquitapp kuiserver
+
+[Install]
+WantedBy=default.target
