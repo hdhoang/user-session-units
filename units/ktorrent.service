@@ -5,7 +5,7 @@ After=xorg.target
 [Service]
 Type=forking
 ExecStart=/usr/bin/ktorrent
-ExecStop=/usr/bin/kquitapp --service org.ktorrent.ktorrent ktorrent
+ExecStop=-/usr/bin/kquitapp --service org.ktorrent.ktorrent ktorrent
 
 [Install]
 WantedBy=default.target

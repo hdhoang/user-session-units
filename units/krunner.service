@@ -5,7 +5,7 @@ After=kwin.service
 [Service]
 Type=forking
 ExecStart=/usr/bin/krunner
-ExecStop=/usr/bin/kquitapp krunner
+ExecStop=-/usr/bin/kquitapp krunner
 
 [Install]
 WantedBy=default.target

@@ -6,7 +6,7 @@ Requires=dbus.socket
 [Service]
 Type=forking
 ExecStart=/usr/bin/plasma-desktop
-ExecStop=/usr/bin/kquitapp plasma-desktop
+ExecStop=-/usr/bin/kquitapp plasma-desktop
 
 [Install]
 WantedBy=default.target

@@ -5,7 +5,7 @@ After=xorg.target
 [Service]
 BusName=org.kde.kwin
 ExecStart=/usr/bin/kwin
-ExecStop=/usr/bin/kquitapp kwin
+ExecStop=-/usr/bin/kquitapp kwin
 
 [Install]
 WantedBy=default.target
