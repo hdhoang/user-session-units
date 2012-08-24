@@ -5,7 +5,7 @@ After=xorg.target
 [Service]
 BusName=im.pidgin.purple.PurpleService
 ExecStart=/usr/bin/pidgin
-ExecStop=/usr/bin/purple-remote quit
+ExecStop=-/usr/bin/purple-remote quit
 
 [Install]
 WantedBy=default.target
