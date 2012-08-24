@@ -1,0 +1,11 @@
+[Unit]
+Description=knotify4
+After=kdeinit4.service
+
+[Service]
+BusName=org.kde.knotify
+ExecStart=/usr/bin/knotify4 --nofork
+ExecStop=-/usr/bin/kquitapp knotify
+
+[Install]
+WantedBy=default.target
