@@ -6,6 +6,8 @@ After=xorg.target
 BusName=org.ktorrent.ktorrent
 ExecStart=/usr/bin/ktorrent --nofork
 ExecStop=-/usr/bin/kquitapp --service org.ktorrent.ktorrent ktorrent
+Nice=15
+IOSchedulingClass=idle
 
 [Install]
 WantedBy=default.target
