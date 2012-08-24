@@ -1,11 +1,10 @@
 [Unit]
 Description=plasma
 After=kwin.service
-Requires=dbus.socket
 
 [Service]
-Type=forking
-ExecStart=/usr/bin/plasma-desktop
+BusName=org.kde.plasma-desktop
+ExecStart=/usr/bin/plasma-desktop --nofork
 ExecStop=-/usr/bin/kquitapp plasma-desktop
 
 [Install]

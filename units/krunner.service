@@ -3,8 +3,8 @@ Description=krunner
 After=kwin.service
 
 [Service]
-Type=forking
-ExecStart=/usr/bin/krunner
+BusName=org.kde.krunner
+ExecStart=/usr/bin/krunner --nofork
 ExecStop=-/usr/bin/kquitapp krunner
 
 [Install]
