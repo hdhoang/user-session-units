@@ -1,0 +1,11 @@
+[Unit]
+Description=kded4
+Before=kdeinit4.service
+
+[Service]
+BusName=org.kde.kded
+ExecStart=/usr/bin/kded4 --nofork
+ExecStop=-/usr/bin/kquitapp kded
+
+[Install]
+WantedBy=default.target
