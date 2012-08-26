@@ -1,6 +1,6 @@
 [Unit]
 Description=Amarok
-After=xorg.target pulseaudio.service
+After=xorg.target pulseaudio.service kwalletd.service
 
 [Service]
 BusName=org.kde.amarok
