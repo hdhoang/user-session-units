@@ -1,0 +1,4 @@
+[D-BUS Service]
+Exec=/bin/true
+Name=org.kde.kuiserver
+SystemdService=kuiserver.service
