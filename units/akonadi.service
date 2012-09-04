@@ -1,0 +1,8 @@
+[Unit]
+Description=Akonadi
+Wants=nepomuk.service
+After=nepomuk.service
+
+[Service]
+BusName=org.freedesktop.Akonadi.Control
+ExecStart=/usr/bin/akonadi_control
