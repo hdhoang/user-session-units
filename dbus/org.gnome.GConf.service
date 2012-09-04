@@ -1,0 +1,5 @@
+[D-BUS Service]
+Exec=/bin/true
+
+Name=org.gnome.GConf
+SystemdService=gconf.service
