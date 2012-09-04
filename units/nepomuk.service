@@ -1,0 +1,7 @@
+[Unit]
+Description=Nepomuk
+After=kdeinit4.service
+
+[Service]
+BusName=org.kde.NepomukServer
+ExecStart=/usr/bin/nepomukserver
