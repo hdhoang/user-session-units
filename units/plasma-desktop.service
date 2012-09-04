@@ -1,6 +1,7 @@
 [Unit]
 Description=plasma
-After=kwin.service
+Wants=akonadi.service
+After=kwin.service akonadi.service
 
 [Service]
 BusName=org.kde.plasma-desktop
