@@ -1,0 +1,5 @@
+[D-BUS Service]
+Exec=/bin/true
+
+Name=org.freedesktop.Akonadi.Control
+SystemdService=akonadi.service
