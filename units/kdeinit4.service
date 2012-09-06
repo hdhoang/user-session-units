@@ -4,7 +4,7 @@ After=xorg.target
 
 [Service]
 BusName=org.kde.klauncher
-ExecStart=/usr/bin/kdeinit4 --no-fork
+ExecStart=/usr/bin/kdeinit4 --no-fork --no-kded
 ExecStop=-/usr/bin/qdbus org.kde.klauncher / terminate_kdeinit
 
 [Install]
