@@ -1,0 +1,5 @@
+[D-BUS Service]
+Exec=/bin/true
+
+Name=org.kde.klauncher
+SystemdService=kdeinit4.service

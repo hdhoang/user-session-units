@@ -3,9 +3,9 @@ Description=kdeinit4
 After=xorg.target
 
 [Service]
-Type=forking
-ExecStart=/usr/bin/kdeinit4
-ExecStop=/usr/bin/kdeinit4_shutdown
+BusName=org.kde.klauncher
+ExecStart=/usr/bin/kdeinit4 --no-fork
+ExecStop=-/usr/bin/qdbus org.kde.klauncher / terminate_kdeinit
 
 [Install]
 WantedBy=default.target
